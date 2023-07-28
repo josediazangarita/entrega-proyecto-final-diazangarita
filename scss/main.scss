@@ -1,0 +1,26 @@
+// import de variables
+@import "utilidades/variables";
+
+// import de mixin
+@import "utilidades/mixin";
+
+// import de eglobal styles
+@import "utilidades/global-styles";
+
+// estilos de inicio
+@import "html/inicio";
+
+// estilos del html noticias
+@import "html/noticias";
+
+// estilos del html juegos
+@import "html/juegos";
+
+// estilos del html plataformas
+@import "html/plataformas";
+
+//estilos del html contacto
+@import "html/contacto";
+
+// propiedades de media query
+@import "utilidades/mediaquery";

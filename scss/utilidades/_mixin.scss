@@ -1,0 +1,59 @@
+// mixin body
+@mixin estilos-body{
+    background-color: $color-azul-principal;
+    background-image: linear-gradient(43deg, #001524 0%, #0e436f 30%, #001524 66%);
+}
+
+// mixin flex column
+@mixin flex-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// mixin enlaces
+@mixin enlaces{
+    text-decoration: none;
+    color: aliceblue !important;
+    font-size: 16px;
+    text-align: center;
+}
+
+// mixin titulos y subtitulos
+@mixin titulos{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    color: aliceblue;
+    font-size: clamp(30px, 8vw, 60px);
+}
+
+@mixin subtitulos{
+    margin: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-size: clamp(10px, 6vw, 30px);
+}
+
+// mixin parrafos
+@mixin parrafos{
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+@mixin grid-base-centrado{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+// mixin footer
+@mixin estilos-texto-footer {
+    text-align: center;
+    padding: 20px 20px;
+    color: $color-azul-secundario;
+}

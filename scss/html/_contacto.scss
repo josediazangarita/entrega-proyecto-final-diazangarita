@@ -1,0 +1,12 @@
+// import de variables
+@import "../utilidades/variables";
+
+// import mixin
+@import "../utilidades/mixin";
+
+/* estilos del html contacto */
+iframe {
+    width: 90%;
+    max-width: 300px;
+    max-height: 250px;
+}

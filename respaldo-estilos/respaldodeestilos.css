@@ -1,0 +1,258 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+
+/* estilos generales */
+
+body{
+    background-color: #001524;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav{
+    background-color: #f6135a;
+    border-radius: 20px;
+    min-width: 80%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue !important;
+    font-size: 16px;
+    text-align: center;
+}
+
+p{
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 266px);
+}
+
+
+main h1{
+    text-align: center;
+    margin: 20px 20px;
+    color: aliceblue;
+    font-size: clamp(40px,8vw,60px);
+   
+}
+
+main h2{
+    margin: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-size: clamp(10px,8vw,30px);
+} 
+
+
+
+/* estilos de inicio */
+
+.contenedor-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contenedor-inicio img{
+    border-radius: 20px;
+}
+
+
+
+/* estilos de noticias */
+
+.contenedor-noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contenedor-noticias img{
+    border-radius: 20px;
+
+}
+
+.texto-noticias{
+    text-align: justify;
+    max-width: 250px;
+}
+
+
+
+/* estilos de juegos */
+
+.contenedor-juegos{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 20px;
+
+}
+
+.contenedor-juegos img{
+    border-radius: 20px;
+}
+
+
+
+/* estilos plataformas */
+
+.botones-plataformas{
+    display: grid;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: repeat(3, 40px);
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    gap: 10px;
+}
+
+.carousel-plataformas{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(4, 200px);
+    margin: 20px;
+    grid-gap: 20px;
+
+}
+
+.carousel-inner{
+    border-radius: 20px;
+}
+
+
+
+/* estilos de contacto */
+
+iframe {
+    width: 90%;
+    max-width: 300px;
+    max-height: 250px;
+}
+
+
+
+/* estilos del footer */
+
+.texto-footer{
+    text-align: center;
+    padding: 20px 20px;
+    color: #0191f2;
+
+}
+
+
+
+/* propiedades de media query */
+
+@media screen and (min-width:768px){
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: repeat(3, 200px);
+        grid-gap: 20px;
+    }
+
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(2, 40px);
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
+}
+
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 200px);
+        margin: 20px;
+        grid-gap: 20px;
+}    
+
+    iframe {
+        width: 90%;
+        max-width: 600px;
+        max-height: 450px;
+}
+
+}
+
+    
+/* se crea el siguiente media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
+
+@media screen and (min-width:992px){
+ 
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, 200px);
+        grid-gap: 20px;
+    }
+
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(6, 110px);
+        grid-template-rows: 40px;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
+}
+
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 200px;
+        margin: 20px;
+        grid-gap: 20px;
+    }    
+
+    main iframe{
+            width: 90%;
+            max-width: 800px;
+            max-height: 450px;
+}
+}

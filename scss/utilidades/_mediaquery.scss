@@ -1,0 +1,139 @@
+/* propiedades de media query */
+@media screen and (min-width:768px){
+    
+    .contenedor-inicio{
+        .subtitulo-inicio{
+            margin-bottom:20px;
+        }
+        .logo-dos-inicio{
+            max-width:400px;            
+        }
+        .botones-plataformas-inicio{
+            padding:50px;
+        }
+        .botones-redes-sociales-inicio{
+            display: inline-block;
+        }
+        }
+    
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: repeat(3, 200px);
+        grid-gap: 20px;
+    }
+
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(2, 40px);
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
+}
+
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 200px);
+        margin: 20px;
+        grid-gap: 20px;
+}    
+
+    iframe {
+        width: 90%;
+        max-width: 600px;
+        max-height: 450px;
+}
+}
+
+    
+/* se crea el siguiente media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
+
+@media screen and (min-width:992px){
+ 
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    
+    .contenedor-inicio {
+        display: grid;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 18px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.75fr 0.75fr 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+              "titulo-inicio img-inicio"
+              "subtitulo-inicio img-inicio"
+              "botones-plataformas-inicio botones-plataformas-inicio"
+              "botones-redes-sociales-inicio botones-redes-sociales-inicio";
+        
+        .titulo-inicio{
+            margin-top:180px;
+        }
+
+        .img-inicio .logo-dos-inicio{
+            max-width: 100%;
+        }
+
+        .botones-plataformas-inicio{
+            display: grid;
+            grid-template-columns: repeat(6, 110px);
+            grid-template-rows: 40px;
+            justify-content: center;
+            align-items: center;
+            width: 110px;
+            gap: 10px;
+        }
+
+        .botones-redes-sociales-inicio{
+            display: inline-block;
+            padding: 38px;
+        }
+    }
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, 200px);
+        grid-gap: 20px;
+    }
+
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(6, 110px);
+        grid-template-rows: 40px;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
+}
+
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 200px;
+        margin: 20px;
+        grid-gap: 20px;
+    }    
+
+    main iframe{
+            width: 90%;
+            max-width: 800px;
+            max-height: 450px;
+}
+}

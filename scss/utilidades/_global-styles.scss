@@ -1,0 +1,38 @@
+/* reset y fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* estilos generales */
+body { @include estilos-body; }
+
+header{
+    @include flex-column;
+    nav{
+        background-color: $color-magenta;
+        border-radius: 20px;
+        min-width: 80%;
+        margin: auto;
+    }
+        .navbar-nav{
+            font-size: 20px;
+
+    }
+}
+
+a{ @include enlaces; }
+
+p{ @include parrafos; }
+
+main{
+    @include flex-column;
+    min-height: calc(100vh - 210px);
+    h1{ @include titulos; }
+    h2{ @include subtitulos; } 
+}
+
+/* estilos del footer */
+footer .texto-footer{ @include estilos-texto-footer; }

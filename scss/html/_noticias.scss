@@ -1,0 +1,22 @@
+// import de variables
+@import "../utilidades/variables";
+
+// import mixin
+@import "../utilidades/mixin";
+
+/* estilos del html noticias */
+.contenedor-noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    img{
+        border-radius: 20px;
+    }  
+    }  
+
+.texto-noticias{
+    text-align: justify;
+    max-width: 250px;
+}

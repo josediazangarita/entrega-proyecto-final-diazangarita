@@ -53,10 +53,41 @@ main {
     font-size: clamp(10px, 6vw, 30px); }
 
 /* estilos del footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; }
+
+footer .contenedor-iconos-redes-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center; }
+  footer .contenedor-iconos-redes-footer .enlace-icono-social-footer {
+    margin-bottom: 50px; }
+  footer .contenedor-iconos-redes-footer i {
+    font-size: 25px;
+    color: aliceblue;
+    margin: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px #f6135a; }
+
+footer .contenedor-copyright-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f6135a;
+  border-radius: 40px;
+  width: 80%;
+  max-width: 1000px; }
+
 footer .texto-footer {
   text-align: center;
-  padding: 20px 20px;
-  color: #0191f2; }
+  padding: 5px 5px;
+  color: aliceblue; }
 
 /* estilos del html inicio */
 .contenedor-inicio {
@@ -82,7 +113,7 @@ footer .texto-footer {
       transform: scale(var(--escala, 1));
       transition: transform 0.25s; }
     .contenedor-inicio .img-inicio .logo-dos-inicio:hover {
-      --escala: 1.1;
+      --escala: 1.025;
       cursor: pointer; }
   .contenedor-inicio .botones-plataformas-inicio {
     grid-area: botones-plataformas-inicio;

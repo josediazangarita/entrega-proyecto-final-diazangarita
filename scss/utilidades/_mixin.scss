@@ -51,9 +51,50 @@
     justify-items: center;
 }
 
-// mixin footer
+//Estilo contenedor footer
+@mixin estilos-contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+// mixin texto footer
 @mixin estilos-texto-footer {
     text-align: center;
-    padding: 20px 20px;
-    color: $color-azul-secundario;
+    padding: 5px 5px;
+    color: $color-azul-terciario;
 }
+
+// mixin contenedor copyright footer
+
+@mixin estilos-contenedor-copyright-footer{
+    display: flex;
+    justify-content: center;
+    background-color: $color-magenta;
+    border-radius:40px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+//mixin iconos redes sociales footer
+@mixin estilos-contenedor-iconos-redes-footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+    .enlace-icono-social-footer{
+        margin-bottom: 50px;
+      }
+      i{
+        font-size: 25px;
+        color: aliceblue;
+        margin: 20px;
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: 0px 5px 10px $color-magenta; 
+        }
+    }

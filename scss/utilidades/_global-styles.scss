@@ -35,4 +35,11 @@ main{
 }
 
 /* estilos del footer */
-footer .texto-footer{ @include estilos-texto-footer; }
+
+footer {@include estilos-contenedor-footer}
+
+footer .contenedor-iconos-redes-footer {@include estilos-contenedor-iconos-redes-footer}
+
+footer .contenedor-copyright-footer {@include estilos-contenedor-copyright-footer}
+
+footer .texto-footer {@include estilos-texto-footer}

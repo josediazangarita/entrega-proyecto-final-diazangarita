@@ -1,258 +1,305 @@
-/* reset */
-
-*{
+/* reset y fuente */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
-}
-
-
-
-/* estilos generales */
-
-body{
+    font-family: 'Fredoka', sans-serif; }
+  
+  /* estilos generales */
+  body {
     background-color: #001524;
-}
-
-header{
+    background-image: linear-gradient(43deg, #001524 0%, #0e436f 30%, #001524 66%); }
+  
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-header nav{
-    background-color: #f6135a;
-    border-radius: 20px;
-    min-width: 80%;
-    margin: auto;
-}
-
-a{
+    flex-direction: column; }
+    header nav {
+      background-color: #f6135a;
+      border-radius: 20px;
+      min-width: 80%;
+      margin: auto; }
+    header .navbar-nav {
+      font-size: 20px; }
+  
+  a {
     text-decoration: none;
     color: aliceblue !important;
     font-size: 16px;
-    text-align: center;
-}
-
-p{
+    text-align: center; }
+  
+  p {
     color: aliceblue;
     margin-top: 10px;
-    margin-bottom: 0;
-    
-}
-
-main{
-    display:flex;
+    margin-bottom: 0; }
+  
+  main {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: calc(100vh - 266px);
-}
-
-
-main h1{
+    min-height: calc(100vh - 210px); }
+    main h1 {
+      text-align: center;
+      margin: 10px;
+      padding: 20px;
+      color: aliceblue;
+      font-size: clamp(30px, 8vw, 60px); }
+    main h2 {
+      margin: 10px;
+      text-align: center;
+      color: aliceblue;
+      font-size: clamp(10px, 6vw, 30px); }
+  
+  /* estilos del footer */
+  footer .texto-footer {
     text-align: center;
-    margin: 20px 20px;
-    color: aliceblue;
-    font-size: clamp(40px,8vw,60px);
-   
-}
-
-main h2{
-    margin: 10px;
-    text-align: center;
-    color: aliceblue;
-    font-size: clamp(10px,8vw,30px);
-} 
-
-
-
-/* estilos de inicio */
-
-.contenedor-inicio{
+    padding: 20px 20px;
+    color: #0191f2; }
+  
+  /* estilos del html inicio */
+  .contenedor-inicio {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.5fr 0.25fr 0.25fr 0.25fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "titulo-inicio"
+   "img-inicio"
+   "subtitulo-inicio"
+   "botones-plataformas-inicio"
+   "botones-redes-sociales-inicio"; }
+    .contenedor-inicio .titulo-inicio {
+      grid-area: titulo-inicio;
+      margin: 0; }
+    .contenedor-inicio .subtitulo-inicio {
+      grid-area: subtitulo-inicio; }
+    .contenedor-inicio .img-inicio {
+      grid-area: img-inicio; }
+      .contenedor-inicio .img-inicio .logo-dos-inicio {
+        max-width: 250px;
+        transform: scale(var(--escala, 1));
+        transition: transform 0.25s; }
+      .contenedor-inicio .img-inicio .logo-dos-inicio:hover {
+        --escala: 1.1;
+        cursor: pointer; }
+    .contenedor-inicio .botones-plataformas-inicio {
+      grid-area: botones-plataformas-inicio;
+      display: grid;
+      grid-template-columns: 110px 110px;
+      grid-template-rows: repeat(3, 40px);
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+      gap: 10px;
+      padding: 20px; }
+    .contenedor-inicio .botones-redes-sociales-inicio {
+      grid-area: botones-redes-sociales-inicio;
+      display: grid;
+      padding: 20px; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin: 0 5px;
+        background: aliceblue;
+        overflow: hidden;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:hover {
+        width: 200px; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button .icon {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(1):hover .icon {
+        background: #4267B2; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(2):hover .icon {
+        background: #1DA1F2; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(3):hover .icon {
+        background: #E1306C; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(4):hover .icon {
+        background: #6441a5; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(5):hover .icon {
+        background: #ff0000; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button .icon i {
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-out; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:hover .icon i {
+        color: #fff; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button span {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+        transition: all 0.3s ease-out; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(1) span {
+        color: #4267B2; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(2) span {
+        color: #1DA1F2; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(3) span {
+        color: #E1306C; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(4) span {
+        color: #333; }
+      .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(5) span {
+        color: #ff0000; }
+  
+  /* estilos del html noticias */
+  .contenedor-noticias {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
-}
-
-.contenedor-inicio img{
-    border-radius: 20px;
-}
-
-
-
-/* estilos de noticias */
-
-.contenedor-noticias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-
-.contenedor-noticias img{
-    border-radius: 20px;
-
-}
-
-.texto-noticias{
+    gap: 50px; }
+    .contenedor-noticias img {
+      border-radius: 20px; }
+  
+  .texto-noticias {
     text-align: justify;
-    max-width: 250px;
-}
-
-
-
-/* estilos de juegos */
-
-.contenedor-juegos{
+    max-width: 250px; }
+  
+  /* estilos del html juegos */
+  .contenedor-juegos {
     display: grid;
     grid-template-columns: 250px;
     grid-template-rows: repeat(6, 200px);
-    grid-gap: 20px;
-
-}
-
-.contenedor-juegos img{
-    border-radius: 20px;
-}
-
-
-
-/* estilos plataformas */
-
-.botones-plataformas{
+    grid-gap: 20px; }
+    .contenedor-juegos img {
+      border-radius: 20px; }
+  
+  /* extend html plataformas */
+  .botones-plataformas, .carousel-plataformas {
     display: grid;
-    grid-template-columns: 110px 110px;
-    grid-template-rows: repeat(3, 40px);
+    grid-gap: 20px; }
+  
+  /* estilos del html plataformas */
+  .botones-plataformas {
     justify-content: center;
     align-items: center;
-    width: 110px;
-    gap: 10px;
-}
-
-.carousel-plataformas{
-    display: grid;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: repeat(3, 40px);
+    width: 110px; }
+  
+  .carousel-plataformas {
     grid-template-columns: 250px;
     grid-template-rows: repeat(4, 200px);
-    margin: 20px;
-    grid-gap: 20px;
-
-}
-
-.carousel-inner{
-    border-radius: 20px;
-}
-
-
-
-/* estilos de contacto */
-
-iframe {
+    margin: 20px; }
+  
+  .carousel-inner {
+    border-radius: 20px; }
+  
+  /* estilos del html contacto */
+  iframe {
     width: 90%;
     max-width: 300px;
-    max-height: 250px;
-}
-
-
-
-/* estilos del footer */
-
-.texto-footer{
-    text-align: center;
-    padding: 20px 20px;
-    color: #0191f2;
-
-}
-
-
-
-/* propiedades de media query */
-
-@media screen and (min-width:768px){
-    
-    .contenedor-juegos{
-        display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: repeat(3, 200px);
-        grid-gap: 20px;
-    }
-
-    .botones-plataformas{
-        display: grid;
-        grid-template-columns: repeat(3, 110px);
-        grid-template-rows: repeat(2, 40px);
-        justify-content: center;
-        align-items: center;
-        width: 110px;
-        gap: 10px;
-}
-
-    .carousel-plataformas{
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        grid-template-rows: repeat(2, 200px);
-        margin: 20px;
-        grid-gap: 20px;
-}    
-
+    max-height: 250px; }
+  
+  /* propiedades de media query */
+  @media screen and (min-width: 768px) {
+    .contenedor-inicio .subtitulo-inicio {
+      margin-bottom: 20px; }
+    .contenedor-inicio .logo-dos-inicio {
+      max-width: 400px; }
+    .contenedor-inicio .botones-plataformas-inicio {
+      padding: 50px; }
+    .contenedor-inicio .botones-redes-sociales-inicio {
+      display: inline-block; }
+    .contenedor-juegos {
+      display: grid;
+      grid-template-columns: 250px 250px;
+      grid-template-rows: repeat(3, 200px);
+      grid-gap: 20px; }
+    .botones-plataformas {
+      display: grid;
+      grid-template-columns: repeat(3, 110px);
+      grid-template-rows: repeat(2, 40px);
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+      gap: 10px; }
+    .carousel-plataformas {
+      display: grid;
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: repeat(2, 200px);
+      margin: 20px;
+      grid-gap: 20px; }
     iframe {
-        width: 90%;
-        max-width: 600px;
-        max-height: 450px;
-}
-
-}
-
-    
-/* se crea el siguiente media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
-
-@media screen and (min-width:992px){
- 
+      width: 90%;
+      max-width: 600px;
+      max-height: 450px; } }
+  
+  /* se crea el siguiente media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
+  @media screen and (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
-        justify-content: center;
-    }
-
+      justify-content: center; }
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
-}
-
-@media screen and (min-width:1200px){
-    
-    .contenedor-juegos{
-        display: grid;
-        grid-template-columns: repeat(3, 250px);
-        grid-template-rows: repeat(2, 200px);
-        grid-gap: 20px;
-    }
-
-    .botones-plataformas{
+      padding-right: 40px;
+      padding-left: 40px; } }
+  
+  @media screen and (min-width: 1200px) {
+    .contenedor-inicio {
+      display: grid;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+      padding: 18px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.75fr 0.75fr 0.2fr 0.2fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas: "titulo-inicio img-inicio"
+   "subtitulo-inicio img-inicio"
+   "botones-plataformas-inicio botones-plataformas-inicio"
+   "botones-redes-sociales-inicio botones-redes-sociales-inicio"; }
+      .contenedor-inicio .titulo-inicio {
+        margin-top: 180px; }
+      .contenedor-inicio .img-inicio .logo-dos-inicio {
+        max-width: 100%; }
+      .contenedor-inicio .botones-plataformas-inicio {
         display: grid;
         grid-template-columns: repeat(6, 110px);
         grid-template-rows: 40px;
         justify-content: center;
         align-items: center;
         width: 110px;
-        gap: 10px;
-}
-
-    .carousel-plataformas{
-        display: grid;
-        grid-template-columns: repeat(4, 250px);
-        grid-template-rows: 200px;
-        margin: 20px;
-        grid-gap: 20px;
-    }    
-
-    main iframe{
-            width: 90%;
-            max-width: 800px;
-            max-height: 450px;
-}
-}
+        gap: 10px; }
+      .contenedor-inicio .botones-redes-sociales-inicio {
+        display: inline-block;
+        padding: 38px; }
+    .contenedor-juegos {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      grid-template-rows: repeat(2, 200px);
+      grid-gap: 20px; }
+    .botones-plataformas {
+      display: grid;
+      grid-template-columns: repeat(6, 110px);
+      grid-template-rows: 40px;
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+      gap: 10px; }
+    .carousel-plataformas {
+      display: grid;
+      grid-template-columns: repeat(4, 250px);
+      grid-template-rows: 200px;
+      margin: 20px;
+      grid-gap: 20px; }
+    main iframe {
+      width: 90%;
+      max-width: 800px;
+      max-height: 450px; } }
+  

@@ -1,6 +1,12 @@
 /* propiedades de media query */
+
+
 @media screen and (min-width:768px){
     
+    main{
+        min-height: calc(100vh - 260px);
+    }
+
     .contenedor-inicio{
         .subtitulo-inicio{
             margin-bottom:20px;
@@ -8,14 +14,13 @@
         .logo-dos-inicio{
             max-width:400px;            
         }
-        .botones-plataformas-inicio{
-            padding:50px;
-        }
-        .botones-redes-sociales-inicio{
-            display: inline-block;
-        }
-        }
-    
+        
+    }
+
+    footer .contenedor-iconos-redes-footer{
+        display:flex;
+        flex-direction: row;
+    }
     
     .contenedor-juegos{
         display: grid;
@@ -62,6 +67,10 @@
         padding-right: 40px;
         padding-left: 40px;
     }
+
+    main{
+        min-height: calc(100vh - 266px);
+    }
 }
 
 @media screen and (min-width:1200px){
@@ -73,7 +82,6 @@
         justify-items: center;
         padding: 18px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.75fr 0.75fr 0.2fr 0.2fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:

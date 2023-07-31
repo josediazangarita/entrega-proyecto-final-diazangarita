@@ -29,7 +29,7 @@ p{ @include parrafos; }
 
 main{
     @include flex-column;
-    min-height: calc(100vh - 210px);
+    min-height: calc(100vh - 340px);
     h1{ @include titulos; }
     h2{ @include subtitulos; } 
 }
@@ -39,7 +39,5 @@ main{
 footer {@include estilos-contenedor-footer}
 
 footer .contenedor-iconos-redes-footer {@include estilos-contenedor-iconos-redes-footer}
-
-footer .contenedor-copyright-footer {@include estilos-contenedor-copyright-footer}
 
 footer .texto-footer {@include estilos-texto-footer}

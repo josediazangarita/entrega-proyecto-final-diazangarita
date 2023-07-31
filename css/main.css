@@ -39,13 +39,12 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: calc(100vh - 210px); }
+  min-height: calc(100vh - 340px); }
   main h1 {
     text-align: center;
-    margin: 10px;
-    padding: 20px;
+    margin-top: 20px;
     color: aliceblue;
-    font-size: clamp(30px, 8vw, 60px); }
+    font-size: clamp(30px, 6vw, 60px); }
   main h2 {
     margin: 10px;
     text-align: center;
@@ -54,11 +53,11 @@ main {
 
 /* estilos del footer */
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px; }
+  /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;*/ }
 
 footer .contenedor-iconos-redes-footer {
   display: grid;
@@ -67,26 +66,18 @@ footer .contenedor-iconos-redes-footer {
   justify-content: center;
   align-items: center; }
   footer .contenedor-iconos-redes-footer .enlace-icono-social-footer {
-    margin-bottom: 50px; }
+    margin-top: 25px;
+    margin-bottom: 25px; }
   footer .contenedor-iconos-redes-footer i {
-    font-size: 25px;
+    font-size: 20px;
     color: aliceblue;
     margin: 20px;
     border-radius: 50%;
-    padding: 15px;
-    box-shadow: 0px 5px 10px #f6135a; }
-
-footer .contenedor-copyright-footer {
-  display: flex;
-  justify-content: center;
-  background-color: #f6135a;
-  border-radius: 40px;
-  width: 80%;
-  max-width: 1000px; }
+    padding: 10px;
+    background-color: #f6135a; }
 
 footer .texto-footer {
   text-align: center;
-  padding: 5px 5px;
   color: aliceblue; }
 
 /* estilos del html inicio */
@@ -97,7 +88,6 @@ footer .texto-footer {
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.25fr 0.5fr 0.25fr 0.25fr 0.25fr;
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
   grid-template-areas: "titulo-inicio" "img-inicio" "subtitulo-inicio" "botones-plataformas-inicio" "botones-redes-sociales-inicio"; }
@@ -116,73 +106,16 @@ footer .texto-footer {
       --escala: 1.025;
       cursor: pointer; }
   .contenedor-inicio .botones-plataformas-inicio {
-    grid-area: botones-plataformas-inicio;
     display: grid;
+    grid-area: botones-plataformas-inicio;
     grid-template-columns: 110px 110px;
     grid-template-rows: repeat(3, 40px);
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 110px;
-    gap: 10px;
-    padding: 20px; }
-  .contenedor-inicio .botones-redes-sociales-inicio {
-    grid-area: botones-redes-sociales-inicio;
-    display: grid;
-    padding: 20px; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button {
-      display: inline-block;
-      height: 60px;
-      width: 60px;
-      margin: 0 5px;
-      background: aliceblue;
-      overflow: hidden;
-      border-radius: 50px;
-      cursor: pointer;
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease-out; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:hover {
-      width: 200px; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button .icon {
-      display: inline-block;
-      height: 60px;
-      width: 60px;
-      text-align: center;
-      border-radius: 50px;
-      box-sizing: border-box;
-      line-height: 60px;
-      transition: all 0.3s ease-out; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(1):hover .icon {
-      background: #4267B2; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(2):hover .icon {
-      background: #1DA1F2; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(3):hover .icon {
-      background: #E1306C; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(4):hover .icon {
-      background: #6441a5; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(5):hover .icon {
-      background: #ff0000; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button .icon i {
-      font-size: 25px;
-      line-height: 60px;
-      transition: all 0.3s ease-out; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:hover .icon i {
-      color: #fff; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button span {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 60px;
-      margin-left: 10px;
-      transition: all 0.3s ease-out; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(1) span {
-      color: #4267B2; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(2) span {
-      color: #1DA1F2; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(3) span {
-      color: #E1306C; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(4) span {
-      color: #333; }
-    .contenedor-inicio .botones-redes-sociales-inicio .button:nth-child(5) span {
-      color: #ff0000; }
+    gap: 10px; }
 
 /* estilos del html noticias */
 .contenedor-noticias {
@@ -236,14 +169,15 @@ iframe {
 
 /* propiedades de media query */
 @media screen and (min-width: 768px) {
+  main {
+    min-height: calc(100vh - 260px); }
   .contenedor-inicio .subtitulo-inicio {
     margin-bottom: 20px; }
   .contenedor-inicio .logo-dos-inicio {
     max-width: 400px; }
-  .contenedor-inicio .botones-plataformas-inicio {
-    padding: 50px; }
-  .contenedor-inicio .botones-redes-sociales-inicio {
-    display: inline-block; }
+  footer .contenedor-iconos-redes-footer {
+    display: flex;
+    flex-direction: row; }
   .contenedor-juegos {
     display: grid;
     grid-template-columns: 250px 250px;
@@ -274,7 +208,9 @@ iframe {
     justify-content: center; }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 40px;
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  main {
+    min-height: calc(100vh - 266px); } }
 
 @media screen and (min-width: 1200px) {
   .contenedor-inicio {
@@ -284,7 +220,6 @@ iframe {
     justify-items: center;
     padding: 18px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.75fr 0.75fr 0.2fr 0.2fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "titulo-inicio img-inicio" "subtitulo-inicio img-inicio" "botones-plataformas-inicio botones-plataformas-inicio" "botones-redes-sociales-inicio botones-redes-sociales-inicio"; }

@@ -24,8 +24,9 @@
 @mixin titulos{
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     color: aliceblue;
-    font-size: clamp(30px, 6vw, 60px);
+    font-size: clamp(20px, 6vw, 60px);
 }
 
 @mixin subtitulos{
@@ -50,23 +51,6 @@
     justify-items: center;
 }
 
-//Estilo contenedor footer
-@mixin estilos-contenedor-footer{
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;*/
-    
-}
-
-
-// mixin texto footer
-@mixin estilos-texto-footer {
-    text-align: center;
-    color: $color-azul-terciario;
-}
-
 //mixin iconos redes sociales footer
 @mixin estilos-contenedor-iconos-redes-footer{
     display:grid;
@@ -87,5 +71,11 @@
         background-color: $color-magenta;
         }
     }
+
+    // mixin texto footer
+@mixin estilos-texto-footer {
+    text-align: center;
+    color: $color-azul-terciario;
+}
 
 

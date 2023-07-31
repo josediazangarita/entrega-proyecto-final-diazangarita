@@ -43,8 +43,9 @@ main {
   main h1 {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     color: aliceblue;
-    font-size: clamp(30px, 6vw, 60px); }
+    font-size: clamp(20px, 6vw, 60px); }
   main h2 {
     margin: 10px;
     text-align: center;
@@ -52,13 +53,6 @@ main {
     font-size: clamp(10px, 6vw, 30px); }
 
 /* estilos del footer */
-footer {
-  /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;*/ }
-
 footer .contenedor-iconos-redes-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -118,12 +118,23 @@ footer .texto-footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 50px; }
-  .contenedor-noticias img {
-    border-radius: 20px; }
+
+.card-noticias {
+  max-width: 250px;
+  height: 400px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1.5px solid rgba(209, 213, 219, 0.3); }
+
+img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
 
 .texto-noticias {
   text-align: justify;
-  max-width: 250px; }
+  padding: 5px; }
 
 /* estilos del html juegos */
 .contenedor-juegos {

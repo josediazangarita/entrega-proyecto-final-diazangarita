@@ -29,13 +29,12 @@ p{ @include parrafos; }
 
 main{
     @include flex-column;
-    min-height: calc(100vh - 340px);
+    margin-top: auto;
     h1{ @include titulos; }
     h2{ @include subtitulos; } 
 }
 
 /* estilos del footer */
 
-footer .contenedor-iconos-redes-footer {@include estilos-contenedor-iconos-redes-footer}
+footer { @include estilos-footer; }
 
-footer .texto-footer {@include estilos-texto-footer}

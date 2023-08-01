@@ -7,6 +7,9 @@
 
 /* estilos generales */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #001524;
   background-image: linear-gradient(43deg, #001524 0%, #0e436f 30%, #001524 66%); }
 
@@ -39,13 +42,13 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: calc(100vh - 340px); }
+  margin-top: auto; }
   main h1 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     color: aliceblue;
-    font-size: clamp(20px, 6vw, 60px); }
+    font-size: clamp(30px, 6vw, 60px); }
   main h2 {
     margin: 10px;
     text-align: center;
@@ -53,26 +56,26 @@ main {
     font-size: clamp(10px, 6vw, 30px); }
 
 /* estilos del footer */
-footer .contenedor-iconos-redes-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center; }
+footer {
+  margin-top: auto; }
+  footer .contenedor-iconos-redes-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
   footer .contenedor-iconos-redes-footer .enlace-icono-social-footer {
     margin-top: 25px;
     margin-bottom: 25px; }
-  footer .contenedor-iconos-redes-footer i {
+  footer .contenedor-iconos-redes-footer .enlace-icono-social-footer i {
     font-size: 20px;
     color: aliceblue;
     margin: 20px;
     border-radius: 50%;
     padding: 10px;
     background-color: #f6135a; }
-
-footer .texto-footer {
-  text-align: center;
-  color: aliceblue; }
+  footer .contenedor-copyright-footer .texto-footer {
+    text-align: center;
+    color: aliceblue; }
 
 /* estilos del html inicio */
 .contenedor-inicio {
@@ -174,15 +177,10 @@ iframe {
 
 /* propiedades de media query */
 @media screen and (min-width: 768px) {
-  main {
-    min-height: calc(100vh - 260px); }
   .contenedor-inicio .subtitulo-inicio {
     margin-bottom: 20px; }
   .contenedor-inicio .logo-dos-inicio {
     max-width: 400px; }
-  footer .contenedor-iconos-redes-footer {
-    display: flex;
-    flex-direction: row; }
   .contenedor-juegos {
     display: grid;
     grid-template-columns: 250px 250px;
@@ -213,9 +211,7 @@ iframe {
     justify-content: center; }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 40px;
-    padding-left: 40px; }
-  main {
-    min-height: calc(100vh - 266px); } }
+    padding-left: 40px; } }
 
 @media screen and (min-width: 1200px) {
   .contenedor-inicio {
@@ -240,9 +236,6 @@ iframe {
       align-items: center;
       width: 110px;
       gap: 10px; }
-    .contenedor-inicio .botones-redes-sociales-inicio {
-      display: inline-block;
-      padding: 38px; }
   .contenedor-juegos {
     display: grid;
     grid-template-columns: repeat(3, 250px);

@@ -1,5 +1,8 @@
 // mixin body
 @mixin estilos-body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: $color-azul-principal;
     background-image: linear-gradient(43deg, #001524 0%, #0e436f 30%, #001524 66%);
 }
@@ -26,7 +29,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     color: aliceblue;
-    font-size: clamp(20px, 6vw, 60px);
+    font-size: clamp(30px, 6vw, 60px);
 }
 
 @mixin subtitulos{
@@ -52,30 +55,29 @@
 }
 
 //mixin iconos redes sociales footer
-@mixin estilos-contenedor-iconos-redes-footer{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-      justify-content: center;
-      align-items: center;
-    .enlace-icono-social-footer{
-        margin-top: 25px;
-        margin-bottom: 25px;
-      }
-      i{
-        font-size: 20px;
-        color: aliceblue;
-        margin: 20px;
-        border-radius: 50%;
-        padding: 10px;
-        background-color: $color-magenta;
-        }
-    }
 
-    // mixin texto footer
-@mixin estilos-texto-footer {
-    text-align: center;
-    color: $color-azul-terciario;
-}
+@mixin estilos-footer{
+        margin-top: auto;
+        .contenedor-iconos-redes-footer{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;}
+            .contenedor-iconos-redes-footer .enlace-icono-social-footer{
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .contenedor-iconos-redes-footer .enlace-icono-social-footer i{
+                font-size: 20px;
+                color: aliceblue;
+                margin: 20px;
+                border-radius: 50%;
+                padding: 10px;
+                background-color: $color-magenta;
+                }
+        .contenedor-copyright-footer .texto-footer{
+                text-align: center;
+                color: $color-azul-terciario;}
+    }
 
 

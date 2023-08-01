@@ -2,10 +2,6 @@
 
 
 @media screen and (min-width:768px){
-    
-    main{
-        min-height: calc(100vh - 260px);
-    }
 
     .contenedor-inicio{
         .subtitulo-inicio{
@@ -16,12 +12,6 @@
         }
         
     }
-
-    footer .contenedor-iconos-redes-footer{
-        display:flex;
-        flex-direction: row;
-    }
-    
     .contenedor-juegos{
         display: grid;
         grid-template-columns: 250px 250px;
@@ -68,9 +58,6 @@
         padding-left: 40px;
     }
 
-    main{
-        min-height: calc(100vh - 266px);
-    }
 }
 
 @media screen and (min-width:1200px){
@@ -106,11 +93,6 @@
             align-items: center;
             width: 110px;
             gap: 10px;
-        }
-
-        .botones-redes-sociales-inicio{
-            display: inline-block;
-            padding: 38px;
         }
     }
     

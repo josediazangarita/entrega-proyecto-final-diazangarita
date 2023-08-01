@@ -23,10 +23,12 @@ header{
         .navbar-nav{
             font-size: 18px;
             }
-        }
     }
+}
 
 a{ @include enlaces; }
+
+a nav-link:hover{color:orange}
 
 p{ @include parrafos; }
 

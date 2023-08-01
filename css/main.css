@@ -18,24 +18,29 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  header img {
+    filter: drop-shadow(2px 4px 6px black); }
   header nav {
     background-color: #f6135a;
-    border-radius: 20px;
-    min-width: 80%;
-    margin: auto; }
-  header .navbar-nav {
-    font-size: 20px; }
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 30px;
+    min-width: 80%; }
+    header nav .navbar-nav {
+      font-size: 18px; }
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
   color: aliceblue !important;
   font-size: 16px;
-  text-align: center; }
+  text-align: center;
+  filter: drop-shadow(2px 4px 6px black); }
 
 p {
   color: aliceblue;
   margin-top: 10px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  filter: drop-shadow(2px 4px 6px black); }
 
 main {
   display: flex;
@@ -48,16 +53,21 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
     color: aliceblue;
-    font-size: clamp(30px, 6vw, 60px); }
+    font-size: clamp(30px, 6vw, 60px);
+    filter: drop-shadow(2px 4px 6px black); }
   main h2 {
     margin: 10px;
     text-align: center;
     color: aliceblue;
-    font-size: clamp(10px, 6vw, 30px); }
+    font-size: clamp(10px, 6vw, 30px);
+    filter: drop-shadow(2px 4px 6px black); }
+  main .img-inicio {
+    filter: drop-shadow(2px 4px 6px black); }
 
 /* estilos del footer */
 footer {
-  margin-top: auto; }
+  margin-top: auto;
+  margin-bottom: 10px; }
   footer .contenedor-iconos-redes-footer {
     display: flex;
     justify-content: center;
@@ -65,7 +75,8 @@ footer {
     flex-wrap: wrap; }
   footer .contenedor-iconos-redes-footer .enlace-icono-social-footer {
     margin-top: 25px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    filter: drop-shadow(2px 4px 6px black); }
   footer .contenedor-iconos-redes-footer .enlace-icono-social-footer i {
     font-size: 20px;
     color: aliceblue;
@@ -113,6 +124,8 @@ footer {
     margin-bottom: 10px;
     width: 110px;
     gap: 10px; }
+    .contenedor-inicio .botones-plataformas-inicio .btn {
+      border-radius: 30px; }
 
 /* estilos del html noticias */
 .contenedor-noticias {
@@ -160,6 +173,8 @@ img {
   grid-template-columns: 110px 110px;
   grid-template-rows: repeat(3, 40px);
   width: 110px; }
+  .botones-plataformas .btn {
+    border-radius: 30px; }
 
 .carousel-plataformas {
   grid-template-columns: 250px;

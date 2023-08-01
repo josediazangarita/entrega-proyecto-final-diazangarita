@@ -18,10 +18,13 @@
 // mixin enlaces
 @mixin enlaces{
     text-decoration: none;
+    text-transform: uppercase;
     color: aliceblue !important;
     font-size: 16px;
     text-align: center;
-}
+    filter: drop-shadow(2px 4px 6px black);
+    }
+    
 
 // mixin titulos y subtitulos
 @mixin titulos{
@@ -30,6 +33,7 @@
     margin-bottom: 20px;
     color: aliceblue;
     font-size: clamp(30px, 6vw, 60px);
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 @mixin subtitulos{
@@ -37,6 +41,7 @@
     text-align: center;
     color: aliceblue;
     font-size: clamp(10px, 6vw, 30px);
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 // mixin parrafos
@@ -44,6 +49,7 @@
     color: aliceblue;
     margin-top: 10px;
     margin-bottom: 0;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 @mixin grid-base-centrado{
@@ -58,6 +64,7 @@
 
 @mixin estilos-footer{
         margin-top: auto;
+        margin-bottom: 10px;
         .contenedor-iconos-redes-footer{
             display:flex;
             justify-content: center;
@@ -66,7 +73,9 @@
             .contenedor-iconos-redes-footer .enlace-icono-social-footer{
                 margin-top: 25px;
                 margin-bottom: 25px;
+                filter: drop-shadow(2px 4px 6px black);
             }
+
             .contenedor-iconos-redes-footer .enlace-icono-social-footer i{
                 font-size: 20px;
                 color: aliceblue;

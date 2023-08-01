@@ -11,15 +11,18 @@ body { @include estilos-body; }
 
 header{
     @include flex-column;
+    img{
+        filter: drop-shadow(2px 4px 6px black);
+    }
     nav{
         background-color: $color-magenta;
-        border-radius: 20px;
+        filter: drop-shadow(2px 4px 6px black);
+        border-radius: 30px;
         min-width: 80%;
-        margin: auto;
-    }
+    
         .navbar-nav{
-            font-size: 20px;
-
+            font-size: 18px;
+        }
     }
 }
 
@@ -31,10 +34,12 @@ main{
     @include flex-column;
     margin-top: auto;
     h1{ @include titulos; }
-    h2{ @include subtitulos; } 
+    h2{ @include subtitulos; }
+    .img-inicio{
+        filter: drop-shadow(2px 4px 6px black);
+    } 
 }
 
 /* estilos del footer */
 
 footer { @include estilos-footer; }
-

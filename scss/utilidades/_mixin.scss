@@ -66,20 +66,18 @@
         margin-bottom: 10px;
         .contenedor-iconos-redes-footer{
             display:flex;
+            margin-top: 20px;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;}
-            .contenedor-iconos-redes-footer .enlace-icono-social-footer{
-                margin-top: 25px;
-                margin-bottom: 25px;
-            }
 
             .contenedor-iconos-redes-footer .enlace-icono-social-footer i{
+                display: flex;
                 font-size: 20px;
                 color: aliceblue;
-                margin: 20px;
+                margin: 15px;
                 border-radius: 50%;
-                padding: 8px;
+                padding: 10px;
                 background-color: $color-magenta;
                 }
         .contenedor-copyright-footer .texto-footer{

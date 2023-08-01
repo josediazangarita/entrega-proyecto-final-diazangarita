@@ -69,18 +69,17 @@ footer {
   margin-bottom: 10px; }
   footer .contenedor-iconos-redes-footer {
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-  footer .contenedor-iconos-redes-footer .enlace-icono-social-footer {
-    margin-top: 25px;
-    margin-bottom: 25px; }
   footer .contenedor-iconos-redes-footer .enlace-icono-social-footer i {
+    display: flex;
     font-size: 20px;
     color: aliceblue;
-    margin: 20px;
+    margin: 15px;
     border-radius: 50%;
-    padding: 8px;
+    padding: 10px;
     background-color: #f6135a; }
   footer .contenedor-copyright-footer .texto-footer {
     text-align: center;

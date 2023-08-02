@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #001524;
-  padding-top: 150px; }
+  padding-top: 103px; }
 
 header {
   display: flex;
@@ -32,7 +32,7 @@ nav {
   background-color: #f6135a;
   filter: drop-shadow(2px 4px 6px black);
   border-radius: 30px;
-  min-width: 80%; }
+  min-width: 90%; }
   nav .navbar-nav {
     font-size: 15px; }
 

@@ -23,8 +23,9 @@
         }
   
     .subtitulo-inicio { 
-        grid-area: subtitulo-inicio; 
-        }
+        grid-area: subtitulo-inicio;
+        } 
+    }
   
     .img-inicio { 
         grid-area: img-inicio;
@@ -52,4 +53,3 @@
                 border-radius: 30px;
             }
         }
-    }

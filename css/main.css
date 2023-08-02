@@ -11,22 +11,30 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #001524;
-  background-image: linear-gradient(43deg, #001524 0%, #0e436f 30%, #001524 66%); }
+  padding-top: 150px; }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
-  header img {
-    filter: drop-shadow(2px 4px 6px black); }
-  header nav {
-    background-color: #f6135a;
-    filter: drop-shadow(2px 4px 6px black);
-    border-radius: 30px;
-    min-width: 80%; }
-    header nav .navbar-nav {
-      font-size: 18px; }
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #001524; }
+
+img {
+  filter: drop-shadow(1px 2px 4px black); }
+
+nav {
+  background-color: #f6135a;
+  filter: drop-shadow(2px 4px 6px black);
+  border-radius: 30px;
+  min-width: 80%; }
+  nav .navbar-nav {
+    font-size: 18px; }
 
 a {
   text-decoration: none;
@@ -37,8 +45,7 @@ a {
 p {
   color: aliceblue;
   margin-top: 10px;
-  margin-bottom: 0;
-  filter: drop-shadow(2px 4px 6px black); }
+  margin-bottom: 0; }
 
 main {
   display: flex;
@@ -100,28 +107,30 @@ footer {
     margin: 0; }
   .contenedor-inicio .subtitulo-inicio {
     grid-area: subtitulo-inicio; }
-  .contenedor-inicio .img-inicio {
-    grid-area: img-inicio; }
-    .contenedor-inicio .img-inicio .logo-dos-inicio {
-      max-width: 250px;
-      transform: scale(var(--escala, 1));
-      transition: transform 0.25s; }
-    .contenedor-inicio .img-inicio .logo-dos-inicio:hover {
-      --escala: 1.025;
-      cursor: pointer; }
-  .contenedor-inicio .botones-plataformas-inicio {
-    display: grid;
-    grid-area: botones-plataformas-inicio;
-    grid-template-columns: 110px 110px;
-    grid-template-rows: repeat(3, 40px);
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 110px;
-    gap: 10px; }
-    .contenedor-inicio .botones-plataformas-inicio .btn {
-      border-radius: 30px; }
+
+.img-inicio {
+  grid-area: img-inicio; }
+  .img-inicio .logo-dos-inicio {
+    max-width: 250px;
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s; }
+  .img-inicio .logo-dos-inicio:hover {
+    --escala: 1.025;
+    cursor: pointer; }
+
+.botones-plataformas-inicio {
+  display: grid;
+  grid-area: botones-plataformas-inicio;
+  grid-template-columns: 110px 110px;
+  grid-template-rows: repeat(3, 40px);
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 110px;
+  gap: 10px; }
+  .botones-plataformas-inicio .btn {
+    border-radius: 30px; }
 
 /* estilos del html noticias */
 .contenedor-noticias {

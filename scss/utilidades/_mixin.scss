@@ -4,7 +4,7 @@
     flex-direction: column;
     min-height: 100vh;
     background-color: $color-azul-principal;
-    background-image: linear-gradient(43deg, #001524 0%, #0e436f 30%, #001524 66%);
+    padding-top: 150px;
 }
 
 // mixin flex column
@@ -46,7 +46,6 @@
     color: aliceblue;
     margin-top: 10px;
     margin-bottom: 0;
-    filter: drop-shadow(2px 4px 6px black);
 }
 
 @mixin grid-base-centrado{

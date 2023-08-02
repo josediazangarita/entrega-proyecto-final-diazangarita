@@ -11,8 +11,16 @@ body { @include estilos-body; }
 
 header{
     @include flex-column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: $color-azul-principal;
+    }
+
     img{
-        filter: drop-shadow(2px 4px 6px black);
+        filter: drop-shadow(1px 2px 4px black);
     }
     nav{
         background-color: $color-magenta;
@@ -24,7 +32,6 @@ header{
             font-size: 18px;
             }
     }
-}
 
 a{ @include enlaces; }
 
@@ -39,6 +46,8 @@ main{
         filter: drop-shadow(2px 4px 6px black);
     } 
 }
+
+
 
 /* estilos del footer */
 

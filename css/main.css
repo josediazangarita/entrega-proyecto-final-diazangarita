@@ -25,7 +25,7 @@ header {
   z-index: 1030;
   background-color: #001524; }
 
-img {
+.logo-uno-inicio {
   filter: drop-shadow(1px 2px 4px black); }
 
 nav {
@@ -35,10 +35,11 @@ nav {
   min-width: 90%; }
   nav .navbar-nav {
     font-size: 16px; }
+    nav .navbar-nav .nav-link {
+      text-transform: uppercase; }
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
   color: aliceblue !important;
   text-align: center; }
 
@@ -56,7 +57,7 @@ main {
   main h1 {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: aliceblue;
     font-size: clamp(30px, 10vw, 60px);
     filter: drop-shadow(2px 4px 6px black); }
@@ -138,24 +139,53 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px; }
+  gap: 50px;
+  margin-bottom: 70px; }
+  .contenedor-noticias .card-noticias {
+    max-width: 252px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1.5px solid rgba(209, 213, 219, 0.3); }
+    .contenedor-noticias .card-noticias .img-noticias {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+    .contenedor-noticias .card-noticias .texto-noticias {
+      text-align: justify;
+      font-size: 14px;
+      padding: 10px; }
+    .contenedor-noticias .card-noticias .links-noticias {
+      font-size: small;
+      margin-left: 180px;
+      font-style: italic; }
 
-.card-noticias {
-  max-width: 250px;
-  height: 400px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
-  border-radius: 20px;
-  border: 1.5px solid rgba(209, 213, 219, 0.3); }
-
-img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px; }
-
-.texto-noticias {
-  text-align: justify;
-  padding: 5px; }
+.contenedor-noticias-eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 25px;
+  margin-bottom: 50px; }
+  .contenedor-noticias-eventos .card-noticias-eventos {
+    max-width: 252px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1.5px solid rgba(209, 213, 219, 0.3); }
+    .contenedor-noticias-eventos .card-noticias-eventos .img-noticias-eventos {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+    .contenedor-noticias-eventos .card-noticias-eventos .texto-noticias-eventos {
+      text-align: justify;
+      font-size: 14px;
+      padding: 10px; }
+    .contenedor-noticias-eventos .card-noticias-eventos .links-noticias-eventos {
+      font-size: small;
+      margin-left: 180px;
+      font-style: italic; }
 
 /* estilos del html juegos */
 .contenedor-juegos {
@@ -202,6 +232,24 @@ iframe {
     margin-bottom: 20px; }
   .contenedor-inicio .logo-dos-inicio {
     max-width: 400px; }
+  .contenedor-noticias .card-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "img h2 h2" "img p p" "img link link";
+    max-width: 500px;
+    height: 202px; }
+  .contenedor-noticias .card-noticias .img-noticias {
+    grid-area: img;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; }
+  .contenedor-noticias .card-noticias .titulo-noticias {
+    grid-area: h2; }
+  .contenedor-noticias .card-noticias .texto-noticias {
+    grid-area: p; }
+  .contenedor-noticias .card-noticias .links-noticias {
+    grid-area: link; }
   .contenedor-juegos {
     display: grid;
     grid-template-columns: 250px 250px;

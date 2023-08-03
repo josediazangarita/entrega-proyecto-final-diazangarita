@@ -1,6 +1,5 @@
 /* propiedades de media query */
 
-
 @media screen and (min-width:768px){
 
     .contenedor-inicio{
@@ -12,6 +11,35 @@
         }
         
     }
+
+    .contenedor-noticias .card-noticias{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "img h2 h2"
+        "img p p"
+        "img link link";
+        max-width: 500px;
+        height: 202px;}
+
+        .contenedor-noticias .card-noticias .img-noticias{
+            grid-area: img;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 0;
+        }
+
+        .contenedor-noticias .card-noticias .titulo-noticias{
+            grid-area: h2;}
+
+        .contenedor-noticias .card-noticias .texto-noticias{
+            grid-area: p;}
+
+        .contenedor-noticias .card-noticias .links-noticias{
+            grid-area: link;
+        }
+
     .contenedor-juegos{
         display: grid;
         grid-template-columns: 250px 250px;

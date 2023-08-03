@@ -18,7 +18,6 @@
 // mixin enlaces
 @mixin enlaces{
     text-decoration: none;
-    text-transform: uppercase;
     color: aliceblue !important;
     text-align: center;
     }
@@ -28,7 +27,7 @@
 @mixin titulos{
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: aliceblue;
     font-size: clamp(30px, 10vw, 60px);
     filter: drop-shadow(2px 4px 6px black);

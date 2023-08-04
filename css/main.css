@@ -140,7 +140,8 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  max-width: 1200px; }
   .contenedor-noticias .card-noticias {
     max-width: 252px;
     height: 400px;
@@ -160,32 +161,185 @@ footer {
       margin-left: 180px;
       font-style: italic; }
 
-.contenedor-noticias-eventos {
+.contenedor-noticias-proximos-lanzamientos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
   margin-top: 25px;
-  margin-bottom: 50px; }
-  .contenedor-noticias-eventos .card-noticias-eventos {
+  margin-bottom: 50px;
+  padding: 20px; }
+  .contenedor-noticias-proximos-lanzamientos .card-noticias-eventos {
     max-width: 252px;
     height: 400px;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(5px);
     border-radius: 20px;
     border: 1.5px solid rgba(209, 213, 219, 0.3); }
-    .contenedor-noticias-eventos .card-noticias-eventos .img-noticias-eventos {
+    .contenedor-noticias-proximos-lanzamientos .card-noticias-eventos .img-noticias-eventos {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px; }
-    .contenedor-noticias-eventos .card-noticias-eventos .texto-noticias-eventos {
+    .contenedor-noticias-proximos-lanzamientos .card-noticias-eventos .texto-noticias-eventos {
       text-align: justify;
       font-size: 14px;
       padding: 10px; }
-    .contenedor-noticias-eventos .card-noticias-eventos .links-noticias-eventos {
+    .contenedor-noticias-proximos-lanzamientos .card-noticias-eventos .links-noticias-eventos {
       font-size: small;
       margin-left: 180px;
       font-style: italic; }
+
+.contenedor-principal-noticias {
+  display: flex;
+  padding: 20px;
+  max-width: 1200px; }
+
+.titulo-noticias-grilla {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  text-align: right;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.boton-etiquetas-noticias-pc {
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 12px;
+  background-color: #a1a32a; }
+
+.boton-etiquetas-noticias-xbox {
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 12px;
+  background-color: #107c10; }
+
+.boton-etiquetas-noticias-nintendo {
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 12px;
+  background-color: #d92522; }
+
+.boton-etiquetas-noticias-apple {
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 12px;
+  background-color: #7b377e; }
+
+.boton-etiquetas-noticias-android {
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 12px;
+  background-color: #a4c639; }
+
+.boton-etiquetas-noticias-playstation {
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 12px;
+  background-color: #00439c; }
+
+.contenedor-principal-noticias .contenedor-noticias-grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "news-uno news-uno news-dos" "news-uno news-uno news-tres" "news-cuatro news-cinco news-seis";
+  gap: 20px; }
+
+.contenedor-principal-noticias .contenedor-noticias-grilla .caja-uno-noticias {
+  grid-area: news-uno;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: center, url(../img/img-noticia-uno.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 250px 20px 20px 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 10px; }
+
+.contenedor-principal-noticias .contenedor-noticias-grilla .caja-dos-noticias {
+  grid-area: news-dos;
+  background-color: blueviolet;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: center, url(../img/img-noticia-dos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 80px 20px 20px 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 10px; }
+
+.contenedor-principal-noticias .contenedor-noticias-grilla .caja-tres-noticias {
+  grid-area: news-tres;
+  background-color: chartreuse;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: center, url(../img/img-noticia-tres.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 80px 20px 20px 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 10px; }
+
+.contenedor-principal-noticias .contenedor-noticias-grilla .caja-cuatro-noticias {
+  grid-area: news-cuatro;
+  background-color: coral;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: center, url(../img/img-noticia-cuatro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 80px 20px 20px 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 10px; }
+
+.contenedor-principal-noticias .contenedor-noticias-grilla .caja-cinco-noticias {
+  grid-area: news-cinco;
+  background-color: darkblue;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: center, url(../img/img-noticia-cinco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 80px 20px 20px 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 10px; }
+
+.contenedor-principal-noticias .contenedor-noticias-grilla .caja-seis-noticias {
+  grid-area: news-seis;
+  background-color: gold;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: center, url(../img/img-noticia-seis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 80px 20px 20px 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 10px; }
 
 /* estilos del html juegos */
 .contenedor-juegos {

@@ -21,6 +21,15 @@
     color: aliceblue !important;
     text-align: center;
     }
+
+@mixin boton-etiquetas-noticias{
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    margin-left: 12px;
+
+}
     
 
 // mixin titulos y subtitulos

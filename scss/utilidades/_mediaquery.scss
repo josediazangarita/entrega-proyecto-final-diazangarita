@@ -190,8 +190,8 @@
         display: grid;
         grid-template-columns: repeat(6, 110px);
         grid-template-rows: 40px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         justify-content: center;
         align-items: center;
         width: 110px;
@@ -202,7 +202,7 @@
         display: grid;
         grid-template-columns: repeat(4, 250px);
         grid-template-rows: 200px 200px;
-        margin: 20px;
+        margin: 10px;
         grid-gap: 20px;
     }    
 

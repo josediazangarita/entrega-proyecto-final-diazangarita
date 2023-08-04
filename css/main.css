@@ -356,7 +356,8 @@ footer {
   align-items: center;
   grid-template-columns: 110px 110px;
   grid-template-rows: repeat(3, 40px);
-  width: 110px; }
+  width: 110px;
+  margin-bottom: 20px; }
   .botones-plataformas .btn {
     border-radius: 30px; }
 
@@ -367,6 +368,11 @@ footer {
 
 .carousel-inner {
   border-radius: 20px; }
+
+video {
+  max-width: 500px;
+  border-radius: 30px;
+  margin-bottom: 30px; }
 
 /* estilos del html contacto */
 iframe {
@@ -491,8 +497,8 @@ iframe {
     display: grid;
     grid-template-columns: repeat(6, 110px);
     grid-template-rows: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     width: 110px;
@@ -501,7 +507,7 @@ iframe {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: 200px 200px;
-    margin: 20px;
+    margin: 10px;
     grid-gap: 20px; }
   main iframe {
     width: 90%;

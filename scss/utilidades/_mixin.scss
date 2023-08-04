@@ -35,10 +35,10 @@
 // mixin titulos y subtitulos
 @mixin titulos{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 50px;
     color: aliceblue;
-    font-size: clamp(30px, 10vw, 60px);
+    font-size: clamp(30px, 10vw, 50px);
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -64,7 +64,7 @@
     justify-items: center;
 }
 
-//mixin cajas de la grilla principal de noticial
+//mixin cajas de la grilla principal de noticias
 
 @mixin caja-grilla-noticias{
     border-radius: 20px;

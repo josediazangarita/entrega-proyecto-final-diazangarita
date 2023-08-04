@@ -150,6 +150,7 @@ footer {
   padding-right: 10px; }
 
 .boton-etiquetas-noticias-pc {
+  display: block;
   color: aliceblue;
   border: none;
   border-radius: 20px;
@@ -158,6 +159,7 @@ footer {
   background-color: #a1a32a; }
 
 .boton-etiquetas-noticias-xbox {
+  display: block;
   color: aliceblue;
   border: none;
   border-radius: 20px;
@@ -166,6 +168,7 @@ footer {
   background-color: #107c10; }
 
 .boton-etiquetas-noticias-nintendo {
+  display: block;
   color: aliceblue;
   border: none;
   border-radius: 20px;
@@ -174,6 +177,7 @@ footer {
   background-color: #d92522; }
 
 .boton-etiquetas-noticias-apple {
+  display: block;
   color: aliceblue;
   border: none;
   border-radius: 20px;
@@ -182,6 +186,7 @@ footer {
   background-color: #7b377e; }
 
 .boton-etiquetas-noticias-android {
+  display: block;
   color: aliceblue;
   border: none;
   border-radius: 20px;
@@ -190,6 +195,7 @@ footer {
   background-color: #a4c639; }
 
 .boton-etiquetas-noticias-playstation {
+  display: block;
   color: aliceblue;
   border: none;
   border-radius: 20px;
@@ -209,73 +215,79 @@ footer {
   display: grid;
   align-content: end;
   grid-area: news-uno;
-  background: center, url(../img/img-noticia-uno.jpg);
+  background: center, url(../../img/img-noticias/img-large-noticia-uno.jpg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #001524;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
   padding: 80px 10px 10px 10px;
   font-size: 1.1rem; }
 
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-dos-noticias {
   grid-area: news-dos;
-  background: url(../img/img-noticia-dos.jpg);
+  background: url(../../img/img-noticias/img-large-noticia-dos.jpg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #001524;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
   padding: 80px 10px 10px 10px;
   font-size: 1.1rem; }
 
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-tres-noticias {
   grid-area: news-tres;
-  background: url(../img/img-noticia-tres.jpg);
+  background: url(../../img/img-noticias/img-large-noticia-tres.jpg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #001524;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
   padding: 80px 10px 10px 10px;
   font-size: 1.1rem; }
 
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-cuatro-noticias {
   grid-area: news-cuatro;
-  background: url(../img/img-noticia-cuatro.jpg);
+  background: url(../../img/img-noticias/img-large-noticia-cuatro.jpg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #001524;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
   padding: 80px 10px 10px 10px;
   font-size: 1.1rem; }
 
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-cinco-noticias {
   grid-area: news-cinco;
-  background: url(../img/img-noticia-cinco.jpg);
+  background: url(../../img/img-noticias/img-large-noticia-cinco.jpg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #001524;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
   padding: 80px 10px 10px 10px;
   font-size: 1.1rem; }
 
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-seis-noticias {
   grid-area: news-seis;
-  background: url(../img/img-noticia-seis.jpg);
+  background: url(../../img/img-noticias/img-large-noticia-seis.jpg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #001524;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
   padding: 80px 10px 10px 10px;
   font-size: 1.1rem; }
 
@@ -292,6 +304,7 @@ footer {
     max-width: 252px;
     height: 400px;
     background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(5px);
     border-radius: 20px;
     border: 1.5px solid rgba(209, 213, 219, 0.3); }
@@ -321,6 +334,7 @@ footer {
     max-width: 252px;
     height: 400px;
     background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(5px);
     border-radius: 20px;
     border: 1.5px solid rgba(209, 213, 219, 0.3); }
@@ -336,6 +350,19 @@ footer {
       margin-left: 180px;
       font-style: italic; }
 
+.botones-plataformas, .carousel-plataformas {
+  display: grid;
+  grid-gap: 20px; }
+
+/* estilos card juegos extend */
+.contenedor-juegos .card-juego-uno, .contenedor-juegos .card-juego-dos, .contenedor-juegos .card-juego-tres, .contenedor-juegos .card-juego-cuatro, .contenedor-juegos .card-juego-cinco, .contenedor-juegos .card-juego-seis, .contenedor-juegos .card-juego-siete, .contenedor-juegos .card-juego-ocho, .contenedor-juegos .card-juego-nueve, .contenedor-juegos .card-juego-diez, .contenedor-juegos .card-juego-once, .contenedor-juegos .card-juego-doce {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #001524; }
+
 /* estilos del html juegos */
 .contenedor-juegos {
   display: grid;
@@ -349,6 +376,15 @@ footer {
 .botones-plataformas, .carousel-plataformas {
   display: grid;
   grid-gap: 20px; }
+
+/* estilos card juegos extend */
+.contenedor-juegos .card-juego-uno, .contenedor-juegos .card-juego-dos, .contenedor-juegos .card-juego-tres, .contenedor-juegos .card-juego-cuatro, .contenedor-juegos .card-juego-cinco, .contenedor-juegos .card-juego-seis, .contenedor-juegos .card-juego-siete, .contenedor-juegos .card-juego-ocho, .contenedor-juegos .card-juego-nueve, .contenedor-juegos .card-juego-diez, .contenedor-juegos .card-juego-once, .contenedor-juegos .card-juego-doce {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #001524; }
 
 /* estilos del html plataformas */
 .botones-plataformas {

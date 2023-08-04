@@ -4,6 +4,9 @@
 // import mixin
 @import "../utilidades/mixin";
 
+// import extend
+@import "../utilidades/extend";
+
 /* estilos del html juegos */
 .contenedor-juegos{
     display: grid;
@@ -15,3 +18,52 @@
     }
 
 }
+
+.contenedor-juegos .card-juego-uno{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-dos{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-tres{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-cuatro{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-cinco{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-seis{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-siete{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-ocho{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-nueve{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-diez{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-once{
+    @extend %card-juegos;
+}
+
+.contenedor-juegos .card-juego-doce{
+    @extend %card-juegos;
+}
+

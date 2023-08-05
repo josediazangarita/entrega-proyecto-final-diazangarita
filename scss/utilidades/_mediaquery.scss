@@ -152,16 +152,19 @@
         grid-template-areas:
               "titulo-inicio img-inicio"
               "subtitulo-inicio img-inicio"
-              "botones-plataformas-inicio botones-plataformas-inicio"
-              "botones-redes-sociales-inicio botones-redes-sociales-inicio";
+              "botones-plataformas-inicio botones-plataformas-inicio";
         
         .titulo-inicio{
             margin-top:100px;
         }
 
         .subtitulo-inicio{
-            margin-bottom: 70px;
-            padding: 20px
+            padding: 20px;
+        }
+
+        .enlace-boton-noticias{
+            margin-top: 20px;
+            margin-bottom: 0;
         }
 
         .img-inicio .logo-dos-inicio{
@@ -176,6 +179,7 @@
             align-items: center;
             width: 110px;
             gap: 10px;
+            margin-top: 50px;
         }
     }
     

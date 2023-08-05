@@ -24,12 +24,23 @@
 
 @mixin boton-etiquetas-noticias{
     display: block;
-    color: aliceblue;
     border: none;
     border-radius: 20px;
     width: 100px;
     margin-left: 12px;
 
+}
+
+@mixin enlace-boton-noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    width: 110px;
+    height: 38px;
+    background-color: $color-magenta;
+    filter: drop-shadow(2px 4px 6px black);
 }
     
 

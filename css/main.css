@@ -215,7 +215,7 @@ footer {
   display: grid;
   align-content: end;
   grid-area: news-uno;
-  background: center, url(../../img/img-noticias/img-large-noticia-uno.jpg);
+  background: url(../../img/img-noticias/img-large-noticia-uno.jpg);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #001524;

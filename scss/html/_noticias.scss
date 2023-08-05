@@ -75,7 +75,7 @@
     display: grid;
     align-content: end;
     grid-area: news-uno;
-    background: center, url(../../img/img-noticias/img-large-noticia-uno.jpg);
+    background: url(../../img/img-noticias/img-large-noticia-uno.jpg);
     @include caja-grilla-noticias;
     
 

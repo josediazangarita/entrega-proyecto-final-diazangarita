@@ -356,24 +356,28 @@ footer {
   gap: 50px;
   margin-bottom: 50px;
   padding: 20px; }
-  .contenedor-noticias-eventos .card-noticias-eventos {
-    max-width: 252px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
-    border: 1.5px solid rgba(209, 213, 219, 0.3); }
-    .contenedor-noticias-eventos .card-noticias-eventos .img-noticias-eventos {
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px; }
-    .contenedor-noticias-eventos .card-noticias-eventos .texto-noticias-eventos {
-      text-align: justify;
-      font-size: 14px;
-      padding: 10px; }
-    .contenedor-noticias-eventos .card-noticias-eventos .links-noticias-eventos {
-      font-size: small;
-      margin-left: 180px;
-      font-style: italic; }
+
+.contenedor-noticias-eventos .card-noticias-eventos {
+  max-width: 252px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  border: 1.5px solid rgba(209, 213, 219, 0.3); }
+
+.contenedor-noticias-eventos .card-noticias-eventos .img-noticias-eventos {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
+
+.contenedor-noticias-eventos .card-noticias-eventos .texto-noticias-eventos {
+  text-align: justify;
+  font-size: 14px;
+  padding: 10px; }
+
+.contenedor-noticias-eventos .card-noticias-eventos .links-noticias-eventos {
+  font-size: small;
+  margin-left: 180px;
+  font-style: italic; }
 
 .botones-plataformas, .carousel-plataformas {
   display: grid;
@@ -476,7 +480,7 @@ iframe {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "img h2 h2" "img p p" "img link link";
+    grid-template-areas: "img h3 h3" "img p p" "img link link";
     max-width: 555px;
     height: 202px; }
   .contenedor-noticias-eventos .card-noticias-eventos .img-noticias-eventos {
@@ -485,7 +489,7 @@ iframe {
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0; }
   .contenedor-noticias-eventos .card-noticias-eventos .titulo-noticias-eventos {
-    grid-area: h2; }
+    grid-area: h3; }
   .contenedor-noticias-eventos .card-noticias-eventos .texto-noticias-eventos {
     grid-area: p; }
   .contenedor-noticias-eventos .card-noticias-eventos .links-noticias-eventos {

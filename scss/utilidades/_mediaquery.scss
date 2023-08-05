@@ -66,7 +66,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-        "img h2 h2"
+        "img h3 h3"
         "img p p"
         "img link link";
         max-width: 555px;
@@ -80,7 +80,7 @@
         }
 
         .contenedor-noticias-eventos .card-noticias-eventos .titulo-noticias-eventos{
-            grid-area: h2;}
+            grid-area: h3;}
 
         .contenedor-noticias-eventos .card-noticias-eventos .texto-noticias-eventos{
             grid-area: p;}

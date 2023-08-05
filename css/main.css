@@ -60,7 +60,7 @@ h2 {
   margin: 10px;
   text-align: center;
   color: aliceblue;
-  font-size: clamp(10px, 6vw, 30px); }
+  font-size: clamp(20px, 6vw, 30px); }
 
 h3 {
   text-align: center;
@@ -432,12 +432,15 @@ footer {
   margin: 20px; }
 
 .carousel-inner {
-  border-radius: 20px; }
+  border-radius: 20px;
+  border: 1.5px solid rgba(209, 213, 219, 0.3); }
 
 video {
   max-width: 500px;
   border-radius: 30px;
-  margin-bottom: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1.5px solid rgba(209, 213, 219, 0.3); }
 
 /* estilos del html contacto */
 iframe {

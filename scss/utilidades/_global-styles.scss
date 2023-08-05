@@ -44,7 +44,10 @@ h1{@include titulos; }
 h2{@include subtitulos;}
 h3{@include subtitulos-cards}
 
-main{@include flex-column;}
+main{
+    @include flex-column;
+    margin-top: auto;
+}
 
 main .img-inicio{
         filter: drop-shadow(2px 4px 6px black);

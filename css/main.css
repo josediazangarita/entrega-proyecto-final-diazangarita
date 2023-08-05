@@ -72,7 +72,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: auto; }
 
 main .img-inicio {
   filter: drop-shadow(2px 4px 6px black); }
@@ -112,8 +113,7 @@ footer {
   grid-auto-flow: row;
   grid-template-areas: "titulo-inicio" "img-inicio" "subtitulo-inicio" "boton-noticias" "botones-plataformas-inicio" "botones-redes-sociales-inicio"; }
   .contenedor-inicio .titulo-inicio {
-    grid-area: titulo-inicio;
-    margin: 0; }
+    grid-area: titulo-inicio; }
   .contenedor-inicio .subtitulo-inicio {
     display: flex;
     flex-direction: column;

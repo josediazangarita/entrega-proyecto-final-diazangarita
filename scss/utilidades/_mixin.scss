@@ -61,6 +61,13 @@
     font-size: clamp(10px, 6vw, 30px);
 }
 
+@mixin subtitulos-cards{
+    text-align: center;
+    color: aliceblue;
+    font-size: clamp(10px, 6vw, 20px);
+    margin-top: 5px;
+}
+
 // mixin parrafos
 @mixin parrafos{
     color: aliceblue;

@@ -115,31 +115,35 @@
     flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 50px;
-    padding: 20px;
-    .card-noticias-lanzamientos{
+    padding: 20px;}
+
+    .contenedor-noticias-lanzamientos .card-noticias-lanzamientos{
         max-width: 252px;
         height: 400px;
         background: rgba(255, 255, 255, .25);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        backdrop-filter: blur(5px);
         border-radius: 20px;
-        border: 1.5px solid rgba(209, 213, 219, 0.3);
-        .img-noticias-lanzamientos{
+        border: 1.5px solid rgba(209, 213, 219, 0.3);}
+
+        .contenedor-noticias-lanzamientos .card-noticias-lanzamientos .img-noticias-lanzamientos{
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
-        .texto-noticias-lanzamientos{
+
+        .contenedor-noticias-lanzamientos .card-noticias-lanzamientos .titulo-noticias-lanzamientos{
+            @include subtitulos-cards;
+        }
+
+        .contenedor-noticias-lanzamientos .card-noticias-lanzamientos .texto-noticias-lanzamientos{
             text-align: justify;
-            font-size: 14px;
+            font-size: clamp(10px, 6vw, 15px);
             padding:10px;
         }
-        .links-noticias-lanzamientos{
+        .contenedor-noticias-lanzamientos .card-noticias-lanzamientos .links-noticias-lanzamientos{
             font-size: small;
             margin-left: 180px;
             font-style: italic;
         } 
-    } 
-}
 
 /* estilos noticias de eventos */
 
@@ -157,7 +161,6 @@
         height: 400px;
         background: rgba(255, 255, 255, .25);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        backdrop-filter: blur(5px);
         border-radius: 20px;
         border: 1.5px solid rgba(209, 213, 219, 0.3);
         .img-noticias-eventos{

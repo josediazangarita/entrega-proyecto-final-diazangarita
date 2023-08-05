@@ -36,20 +36,20 @@ header{
             }
     }
 
-a{ @include enlaces;}
+a{@include enlaces;}
 
-p{ @include parrafos;}
+p{@include parrafos;}
 
-main{
-    @include flex-column;
-    margin-top: auto;
-    h1{ @include titulos; }
-    h2{ @include subtitulos;}
-    .img-inicio{
+h1{@include titulos; }
+h2{@include subtitulos;}
+h3{@include subtitulos-cards}
+
+main{@include flex-column;}
+
+main .img-inicio{
         filter: drop-shadow(2px 4px 6px black);
     }
-}
 
 /* estilos del footer */
 
-footer { @include estilos-footer; }
+footer{ @include estilos-footer; }

@@ -75,34 +75,34 @@
     display: grid;
     align-content: end;
     grid-area: news-uno;
-    background: url(../../img/img-noticias/img-large-noticia-uno.jpg);
+    background-image: url(../img/img-noticias/img-large-noticia-uno.jpg);
     @include caja-grilla-noticias;
     
 
 }
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-dos-noticias{
     grid-area: news-dos;
-    background: url(../../img/img-noticias/img-large-noticia-dos.jpg);
+    background-image: url(../img/img-noticias/img-large-noticia-dos.jpg);
     @include caja-grilla-noticias;
 }
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-tres-noticias{
     grid-area: news-tres;
-    background: url(../../img/img-noticias/img-large-noticia-tres.jpg);
+    background-image: url(../img/img-noticias/img-large-noticia-tres.jpg);
     @include caja-grilla-noticias;
 }
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-cuatro-noticias{
     grid-area: news-cuatro;
-    background: url(../../img/img-noticias/img-large-noticia-cuatro.jpg);
+    background-image: url(../img/img-noticias/img-large-noticia-cuatro.jpg);
     @include caja-grilla-noticias;
 }
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-cinco-noticias{
     grid-area: news-cinco;
-    background: url(../../img/img-noticias/img-large-noticia-cinco.jpg);
+    background-image: url(../img/img-noticias/img-large-noticia-cinco.jpg);
     @include caja-grilla-noticias;
 }
 .contenedor-principal-noticias .contenedor-noticias-grilla .caja-seis-noticias{
     grid-area: news-seis;
-    background: url(../../img/img-noticias/img-large-noticia-seis.jpg);
+    background-image: url(../img/img-noticias/img-large-noticia-seis.jpg);
     @include caja-grilla-noticias;
 }
 
